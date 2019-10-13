@@ -11,20 +11,20 @@ public class NonFiction extends Book {
         super.bookPrice=bookPrice;
     }
 
-    public void print(){
-        System.out.println("Book.NonFiction Book.Book Name: "+getBookTitle()+" and price: $"+getBookPrice());
-    }
+   /* public void print(){
+        System.out.println("NonFiction Book Name: "+getBookTitle()+" and price: $"+getBookPrice());
+    }*/
 
-    public void printAll(ArrayList<Book> bookGUIS){
-        for (Book bookGUI : bookGUIS){
-            if (bookGUI instanceof NonFiction) {
-                System.out.println("Name of the book" + bookGUI.getBookTitle() + "and price $" + bookGUI.getBookPrice());
+    public void printAll(ArrayList<Book> books){
+        for (Book book : books){
+            if (book instanceof NonFiction) {
+                System.out.println("Name of the book" + book.getBookTitle() + "and price $" + book.getBookPrice());
             }
         }
     }
     @Override
     public String toString() {
-        return "Non-Book.Fiction "+super.toString();
+        return "Non-Fiction "+super.toString();
     }
 
 }

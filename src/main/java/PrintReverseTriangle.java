@@ -9,11 +9,11 @@ public class PrintReverseTriangle {
                 num++;
             }
             System.out.println("");
-            for (int h=0;h<=row;h++) {
+            /*for (int h=0;h<=row;h++) {
                 if(row==number-1)
                     break;
                 else System.out.print("-");
-            }
+            }*/
         }
     }
 

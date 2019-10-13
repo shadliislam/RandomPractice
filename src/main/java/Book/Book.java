@@ -22,11 +22,11 @@ public abstract class Book {
     }
 
     public abstract void setPrice(double bookPrice);
-    public abstract void print();
+   // public abstract void print();
 
     @Override
     public String toString() {
-        return "Book.Book { Title='" + bookTitle + '\'' + ", Price=" + bookPrice +'}';
+        return "Book {Title='" + bookTitle + '\'' + ", Price= $" + bookPrice +'}';
     }
 }
 

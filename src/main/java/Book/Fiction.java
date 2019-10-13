@@ -12,13 +12,13 @@ public class Fiction extends Book {
         super.bookPrice=bookPrice;
     }
 
-    public void print() {
-        System.out.println("Book.Fiction Book.Book Name: "+getBookTitle()+" and price: $"+getBookPrice());
-    }
+   /* public void print() {
+        System.out.println("Fiction Book Name: "+getBookTitle()+" and price: $"+getBookPrice());
+    }*/
 
     @Override
     public String toString() {
-        return "Book.Fiction "+super.toString();
+        return "Fiction "+super.toString();
     }
 
     public void printAll(ArrayList<Book> bookGUIS){
