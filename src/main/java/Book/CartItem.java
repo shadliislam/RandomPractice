@@ -32,7 +32,7 @@ public class CartItem {
 
     @Override
     public String toString() {
-        return "'"+book.getBookTitle()+"'"+", Unit Price: "+book.getBookPrice()+", quantity: "+getCount()+", price: $"+getPrice();
+        return "'"+book.getBookTitle()+"'"+", Unit Price: $"+book.getBookPrice()+", quantity: "+getCount()+", price: $"+getPrice();
     }
 
     @Override
