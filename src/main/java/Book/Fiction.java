@@ -27,7 +27,6 @@ public class Fiction extends Book {
                 System.out.println("Name of the book" + bookGUI.getBookTitle() + "and price $" + bookGUI.getBookPrice());
             }
         }
-
     }
 }
 

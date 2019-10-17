@@ -20,20 +20,26 @@ public class ListBook {
             String bookName = scanner.next();
             System.out.println("Insert Book price: ");
             Double price = scanner.nextDouble();
-            if(bookType.equalsIgnoreCase("F")) {
+            if(!bookType.equalsIgnoreCase("F") || !bookType.equalsIgnoreCase("N") )
+            {
+                System.out.println("Wrong input, type again!");
+            } else {
+
+                if(bookType.equalsIgnoreCase("F")) {
                 Book fiction = new Fiction(bookName);
                 fiction.setPrice(price);
                 books.add(fiction);
-            } else if(bookType.equalsIgnoreCase("N")){
-                Book nonFiction = new NonFiction(bookName);
-                nonFiction.setPrice(price);
-                books.add(nonFiction);
+                } else if(bookType.equalsIgnoreCase("N")) {
+                    Book nonFiction = new NonFiction(bookName);
+                    nonFiction.setPrice(price);
+                    books.add(nonFiction);
+                }
             }
         }
     }
     public static void printBook(ArrayList<Book> books){
         for (Book book:books){
-            if (book instanceof NonFiction) {
+            if (book instanceof NonFiction){
                 System.out.println("------------------------------------------------");
                 System.out.println("Name of the NonFiction book: " +"'"+book.getBookTitle()+"'"+ ", and price: $" + book.getBookPrice());
             }
